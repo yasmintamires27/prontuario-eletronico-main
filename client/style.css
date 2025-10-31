@@ -1,0 +1,140 @@
+:root {
+  --cor-primaria: #ef4444; 
+  --cor-secundaria: #f3f4f6; 
+  --cor-texto: #1f2937; 
+  --vidro-fundo: rgba(255, 255, 255, 0.3);
+  --vidro-borda: rgba(255, 255, 255, 0.4);
+  --vidro-sombra: rgba(0, 0, 0, 0.15);
+  --fonte-base: "Poppins", sans-serif;
+  --fonte-titulo: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--fonte-base);
+  background-color: var(--vidro-fundo);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-texto);
+}
+
+.form {
+  margin: 60px;
+  background: var(--vidro-fundo);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border-radius: 20px;
+  border: 1px solid var(--vidro-borda);
+  box-shadow: 0 8px 25px var(--vidro-sombra);
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  color: var(--cor-texto);
+}
+
+.main-title{
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  text-align: center;
+  color: var(--cor-primaria);
+  margin-bottom: 8px;
+}
+
+.main-descr{
+  text-align: center;
+  color: #374151;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 4px solid var(--cor-primaria);
+  font-weight: 600;
+  color: var(--cor-texto);
+}
+
+input,
+textarea {
+  width: 80%;
+  padding: 12px 14px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--cor-texto);
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #6b7280;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--cor-primaria);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 0.9rem;
+  color: #374151;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  accent-color: var(--cor-primaria);
+  margin-right: 6px;
+}
+
+button {
+  background: var(--cor-primaria);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);
+}
+
+@media (max-width: 640px) {
+  form {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}

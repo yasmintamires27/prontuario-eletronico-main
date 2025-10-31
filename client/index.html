@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prontuário Eletrônico</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form class="form" id="TextoFormulario">
+    <h1 class="main-title">Prontuário Eletrônico de Enfermagem para Pessoas Trans</h1>
+    <p class="main-descr">(Anamnese, exame físico e acompanhamento integral)</p>
+
+    <!-- Identificação -->
+    <div id="identificacao">
+      <h2>1. Identificação</h2>
+
+      <input id="NomePaciente" type="text" placeholder="Nome social" required>
+      <input type="text" placeholder="Nome civil (opcional)">
+      <input type="text" placeholder="Pronome">
+
+      <p>Identidade de gênero</p>
+      <label><input id="mulher_trans" type="radio" name="genero"> Mulher trans</label>
+      <label><input id="homem_trans" type="radio" name="genero"> Homem trans</label>
+      <label><input id="nao_binario" type="radio" name="genero"> Não-binário</label>
+      <label><input id="outro" type="radio" name="genero"> Outro</label>
+
+      <input id="Telefone" type="text" placeholder="Telefone" required>
+      <input id="DataNascimento" type="date" placeholder="Data de nascimento" required>
+    </div>
+
+    <div id="queixa">
+      <h2>2. Queixa Principal</h2>
+      <textarea id="Queixa" placeholder="Descreva a queixa principal..." rows="4" required></textarea>
+    </div>
+
+    <div id="medicacoes">
+      <h2>3. Medicamentos em uso</h2>
+      <textarea id="Medicamentos" placeholder="Liste os medicamentos em uso..." rows="3"></textarea>
+    </div>
+
+    <div id="diagnostico">
+      <h2>4. Diagnóstico</h2>
+      <textarea id="Diagnostico" placeholder="Informe o diagnóstico..." rows="3"></textarea>
+    </div>
+
+    <div id="conduta">
+      <h2>5. Conduta de Enfermagem</h2>
+      <textarea id="Conduta" placeholder="Descreva a conduta adotada..." rows="3"></textarea>
+    </div>
+
+    <button type="submit">Salvar Prontuário</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

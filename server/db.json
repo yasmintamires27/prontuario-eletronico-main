@@ -1,0 +1,20 @@
+{
+  "prontuarios": [
+    {
+      "id": 1761827683605,
+      "Paciente": {
+        "nome": "aaa",
+        "Telefone": "16982714125",
+        "DataNascimento": "2025-10-31"
+      },
+      "Reclamacoes": {
+        "Queixa": "aaa",
+        "Medicamentos": "aaa"
+      },
+      "Plano": {
+        "Diagnostico": "aaa",
+        "Conduta": "aa"
+      }
+    }
+  ]
+}
