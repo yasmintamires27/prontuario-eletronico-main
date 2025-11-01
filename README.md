@@ -43,4 +43,4 @@ npm run dev
 ### Colaboradores
 - Yasmin Tamires Araujo Dos Santos
 - Marcos Vinicius Pinheiro de Jesus
-- Marcos Paulo 
+- Marcos Paulo Da Silva Carrara
